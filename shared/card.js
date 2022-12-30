@@ -1,17 +1,18 @@
 import React from "react"
-import { View,Text, ImageBackground, Button , } from 'react-native';
+import { View,Text, Button, ImageBackground } from 'react-native';
 import { Globalstyles } from "../styles/global"; 
 
-export default function Card(props){
 
+
+export default function Card(props){
+    
     return (
      
-       
-        <View>
-            <Text style={Globalstyles.headertxt}> Welcome Home</Text>
-
-            <Button title = 'test' color='coral'/>
-        </View>
-
-    )
+        <ImageBackground source = {require ('../assets/bgrd.jpg')} style={Globalstyles.imgback}>
+            <View>
+               {props.children}
+            </View>
+        </ImageBackground> 
+     
+    );
 }
