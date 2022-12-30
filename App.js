@@ -1,13 +1,13 @@
 
 import { StyleSheet, Text, View , ImageBackground} from 'react-native';
 
-import HomeDrawerNavigator from './routes/homedrawer';
 
+import LoginStackNavigator from './routes/loginstack';
 import { Globalstyles } from './styles/global';
 
 export default function App() {
   return (
-          <HomeDrawerNavigator/>
+          <LoginStackNavigator/>
   );
 }
 

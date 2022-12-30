@@ -9,10 +9,10 @@ const Drawer = createDrawerNavigator();
 
 
 
-export default function HomeDrawerNavigator() {
+export default function StudentDrawerNavigator() {
     return (
       <NavigationContainer independent={true} >
-        <Drawer.Navigator initialRouteName='Home' screenOptions={{
+        <Drawer.Navigator initialRouteName='AddStudent' screenOptions={{
                                                                   gestureEnabled: true,
                                                                   headerStyle: {
                                                                   backgroundColor: '#101010'
